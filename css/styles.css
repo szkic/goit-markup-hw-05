@@ -1,5 +1,6 @@
 :root {
   --blue-text: #2196f3;
+  --blue-bg-opacity: #2196f3e6;
   --black-text: #000;
   --grey-text: #212121;
   --white: #fff;
@@ -540,6 +541,36 @@ p {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
+  letter-spacing: 0.03em;
   color: var(--white);
   background-color: var(--image-desc);
+}
+
+.portfolio-container {
+  position: relative;
+}
+
+.portfolio-description-text {
+  position: absolute;
+  top: 294px;
+  left: 0;
+  padding: 49px 45px 49px 24px;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  color: var(--white);
+  background-color: var(--blue-bg-opacity);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+}
+
+.portfolio-list li:hover .portfolio-description-text {
+  display: block;
+  transform: translateY(-294px);
+}
+
+.img-box {
+  position: relative;
+  overflow: hidden;
 }
