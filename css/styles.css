@@ -495,3 +495,26 @@ p {
   padding-top: 12px;
   padding-bottom: 20px;
 }
+
+.is-active::after {
+  content: '';
+  display: inline-block;
+  height: 4px;
+  border-radius: 4px;
+  background-color: var(--blue-text);
+  position: absolute;
+  top: 76px;
+  /* top: 45px; */
+}
+
+.active-agency::after {
+  width: 53px;
+}
+
+.active-portfolio::after {
+  width: 58px;
+}
+
+.is-active {
+  color: #2196f3;
+}
