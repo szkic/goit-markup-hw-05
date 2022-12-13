@@ -28,7 +28,7 @@
             <a href="index.html" class="logo"><span class="logo-blue">Web</span>Studio</a>
             <nav>
               <ul class="list nav-list">
-                <li class="rel">
+                <li class="active-container">
                   <a href="index.html" class="nav-link is-active">Agencja</a>
                 </li>
                 <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
@@ -63,7 +63,12 @@
       <section class="title-description section">
         <div class="container">
           <h1 class="title-text">Efektywne rozwiązania dla waszego biznesu</h1>
-          <button class="title-button">Zamów usługe</button>
+          <button class="title-button" data-modal-open>Zamów usługe</button>
+        </div>
+        <div class="modal is-hidden" data-modal>
+          <div class="modal-box">
+            <button data-modal-close></button>
+          </div>
         </div>
       </section>
 
