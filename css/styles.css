@@ -552,17 +552,13 @@ p {
 
 .portfolio-description-text {
   position: absolute;
-  top: 294px;
-  left: 0;
   padding: 49px 45px 50px 24px;
   font-size: 18px;
   line-height: 1.55;
   letter-spacing: 0.03em;
   color: var(--white);
   background-color: var(--blue-bg-opacity);
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list li:hover .portfolio-description-text {
@@ -619,6 +615,10 @@ p {
 .modal-box > button::after {
   content: '\00d7';
   font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .modal-box > button:hover {
