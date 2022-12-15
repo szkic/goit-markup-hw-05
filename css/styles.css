@@ -612,7 +612,6 @@ p {
 
 @keyframes popup {
   0% {
-    /* rotate: 35deg; */
     transform: translate(-50%, -50%) rotateY(90deg);
   }
 
@@ -632,7 +631,6 @@ p {
   height: 30px;
   margin: 0;
   padding: 0;
-  transition: box-shadow, 250ms linear;
 }
 
 .modal-box > button::after {
