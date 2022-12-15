@@ -327,10 +327,6 @@ p {
   padding: 20px 24px;
 }
 
-.portfolio-list img {
-  display: block;
-}
-
 .portfolio-list h3 {
   padding-bottom: 4px;
 }
@@ -572,7 +568,6 @@ p {
 }
 
 .portfolio-list li:hover .portfolio-description-text {
-  display: block;
   transform: translateY(-294px);
 }
 
