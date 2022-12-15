@@ -102,6 +102,9 @@ p {
   letter-spacing: 0.02em;
   line-height: 1.17;
   color: inherit;
+  transition-property: color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contact .nav-link {
@@ -114,9 +117,6 @@ p {
 .nav-link:focus .raster {
   color: var(--blue-text);
   fill: var(--blue-text);
-  transition-property: color, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* TITLE */
@@ -284,6 +284,9 @@ p {
 
   /* hw-03 */
   padding: 6px 22px;
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-button:hover,
@@ -294,9 +297,6 @@ p {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  transition-property: background-color, color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list {
@@ -306,11 +306,15 @@ p {
   gap: 30px;
 }
 
+.portfolio-list li {
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .portfolio-list li:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list figure {
@@ -400,6 +404,9 @@ p {
 
 .raster {
   fill: var(--light-grey);
+  transition-property: color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .adv-icon-background {
@@ -427,10 +434,16 @@ p {
   padding: 16px 32px;
   border: 1px solid var(--iconBorder);
   border-radius: 4px;
+  transition-property: border-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customer-icon {
   fill: var(--iconBorder);
+  transition-property: border-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customer-icon-container:hover,
@@ -439,9 +452,6 @@ p {
 .customer-icon-container:focus .customer-icon {
   border-color: var(--blue-text);
   fill: var(--blue-text);
-  transition-property: border-color, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-networks {
@@ -455,27 +465,27 @@ p {
   padding: 12px;
   font-size: 0;
   border-radius: 50%;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon svg {
   fill: var(--iconBorder);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon:hover,
 .social-icon:focus {
   background-color: var(--blue-text);
   border-radius: 50%;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon:hover svg,
 .social-icon:focus svg {
   fill: var(--white);
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-networks-footer {
