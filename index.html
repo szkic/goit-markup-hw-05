@@ -65,11 +65,6 @@
           <h1 class="title-text">Efektywne rozwiązania dla waszego biznesu</h1>
           <button class="title-button" data-modal-open>Zamów usługe</button>
         </div>
-        <div class="modal is-hidden" data-modal>
-          <div class="modal-box">
-            <button data-modal-close></button>
-          </div>
-        </div>
       </section>
 
       <!-- ATUTY -->
@@ -291,7 +286,7 @@
                   <ul class="list social-networks">
                     <li>
                       <a href="#" class="social-icon">
-                        <svg width="20" height="20">
+                        <svg width="20" height="20" class="abc">
                           <use href="images/icons.svg#icon-instagram"></use>
                         </svg>
                       </a>
@@ -388,33 +383,33 @@
           </address>
         </div>
         <div class="social-footer">
-          <h4>Dołącz do nas</h4>
+          <h4 class="social-footer-desc">Dołącz do nas</h4>
           <ul class="list social-networks-footer">
             <li>
-              <a href="#" class="social-icon">
+              <a href="#" class="social-icon footer-icon-background">
                 <svg width="20" height="20">
-                  <use href="images/icons.svg#icon-instagram"></use>
+                  <use href="images/icons.svg#icon-instagram" class="footer-icon-color"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="#" class="social-icon">
+              <a href="#" class="social-icon footer-icon-background">
                 <svg width="20" height="20">
-                  <use href="images/icons.svg#icon-twitter"></use>
+                  <use href="images/icons.svg#icon-twitter" class="footer-icon-color"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="#" class="social-icon">
+              <a href="#" class="social-icon footer-icon-background">
                 <svg width="20" height="20">
-                  <use href="images/icons.svg#icon-facebook"></use>
+                  <use href="images/icons.svg#icon-facebook" class="footer-icon-color"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="#" class="social-icon">
+              <a href="#" class="social-icon footer-icon-background">
                 <svg width="20" height="20">
-                  <use href="images/icons.svg#icon-linkedin"></use>
+                  <use href="images/icons.svg#icon-linkedin" class="footer-icon-color"></use>
                 </svg>
               </a>
             </li>
@@ -422,6 +417,12 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal is-hidden" data-modal>
+      <div class="modal-box">
+        <button class="modal-button" data-modal-close></button>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
